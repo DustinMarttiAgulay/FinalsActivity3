@@ -1,0 +1,143 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+    color: rgba(255, 255, 255, 0.61);
+}
+h3{
+    color:white;
+}
+h2{
+    color:white;
+}
+p{
+    color:rgba(255, 255, 255, 0.596);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(5, 13, 49);
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  padding: 20px;
+}
+.bio {
+  padding-bottom: 10px;
+  color:white;
+}
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.description {
+  border: 5px dotted rgb(13, 35, 134);
+  padding: 10px;
+}
+/* Header */
+.header {
+  background: rgba(13, 36, 134, 0.404);
+  border: 2px solid rgba(13, 36, 134, 0.404);
+  color: white;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  text-align: center;
+}
+.header h1 {
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+.highlight {
+  color: rgba(1, 129, 248, 0.432);
+  font-weight: 600;
+  border: 3px solid rgba(0, 0, 0, 0.164);
+  border-radius: 10px;
+  padding: 3px;
+}
+/* Main layout */
+.main-area {
+  display: grid;
+  gap: 20px;
+  align-items: flex-start;
+}
+/* Content */
+.content {
+  flex: 2;
+  background: rgba(19, 50, 190, 0.404);
+  border: 2px solid rgba(13, 37, 139, 0.404);
+  padding: 24px;
+  border-radius: 6px;
+}
+ul {
+  padding-left: 25px;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background: rgba(19, 50, 190, 0.404);
+  border: rgba(13, 36, 134, 0.404);
+  padding: 16px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+/* Profile card */
+.profile-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border: 2px dashed rgba(19, 50, 190, 0.404);
+  padding: 24px;
+  margin-bottom: 14px;
+  background: rgba(13, 36, 139, 0.404);
+}
+.avatar {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 3px solid #dbe9ff;
+}
+.tagline {
+  padding-bottom: 10px;
+  color:white;
+}
+/* Button */
+.contact-btn {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 15px;
+  background: #000000;
+  color: white;
+  cursor: pointer;
+}
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 16px;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+.highlight {
+  background-color: rgb(0, 0, 0);
+}
+/* Responsive layout */
+@media (max-width: 800px) {
+  .main-area {
+    flex-direction: column;
+  }
+  .avatar {
+    width: 72px;
+    height: 72px;
+  }
+}
